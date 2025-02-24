@@ -1,5 +1,7 @@
+from num2words import num2words
+
 def numToWords(num):
-    return "example"
+    return num2words(num)
 
 def numToCheck(num):
     return f"{numToWords(num-(num%1))} dollars and {num%1}/100"
