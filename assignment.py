@@ -4,7 +4,7 @@ def numToWords(num):
     return num2words(num)
 
 def numToCheck(num):
-    return f"{numToWords(num-(num%1))} dollars and {(num%1):02d}/100"
+    return f"{numToWords(num - (num % 1))} dollars and {(num % 1) * 100:02.0f}/100"
 
 if __name__=="__main__":
     amount = input("enter the amount as a number: ")
