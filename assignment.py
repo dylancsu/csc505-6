@@ -9,7 +9,7 @@ def numToCheck(num):
 if __name__=="__main__":
     amount = input("enter the amount as a number: ")
     try:
-        num = float(input)
+        num = float(amount)
         print(numToCheck(num))
     except ValueError:
         print("Error: not a number")
